@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyEnemy : MonoBehaviour
 {
-    public AudioSource sound;
+    public AudioSource enemySound;
     public AudioClip enemyDieSound;
     public int damage;
 
@@ -28,7 +28,7 @@ public class DestroyEnemy : MonoBehaviour
             collision.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
             if(collision.gameObject.GetComponent<EnemyHealth>().currentHealth == 0)
             {
-                sound.PlayOneShot(enemyDieSound);
+                enemySound.PlayOneShot(enemyDieSound);
                 GameManager.instance.UpdateScore(1);
                 Destroy(collision.gameObject);
             }

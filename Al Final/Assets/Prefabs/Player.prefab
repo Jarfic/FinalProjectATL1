@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00126b6deb5754821a682a1df8a79e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 0}
+  enemySound: {fileID: 0}
   enemyDieSound: {fileID: 8300000, guid: e91021bb6d10d4b65a42fda8f2459a17, type: 3}
   damage: 0
 --- !u!1 &3231853196646555283
@@ -695,27 +695,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key0.b
-      value: 1
+      value: 0.0060601234
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key0.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key0.r
-      value: 1
+      value: 0.6698113
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key1.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key1.g
-      value: 1
+      value: 0.9056604
       objectReference: {fileID: 0}
     - target: {fileID: 5517831857179001602, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: gradient.key1.r
-      value: 1
+      value: 0.005599184
       objectReference: {fileID: 0}
     - target: {fileID: 6191730880695980015, guid: e49bc6c8cce294b22b1173c47f5ecabd, type: 3}
       propertyPath: m_Name

@@ -27,6 +27,6 @@ public class Spawner : MonoBehaviour
     {
         
         if(--counter == 0) CancelInvoke("SpawnEnemies");
-        Instantiate(enemies[Random.Range(0,enemies.Length)], new Vector3(Random.Range(xRange,xRange+10),yRange,Random.Range(zRange,zRange+10)), Quaternion.identity);
+        Instantiate(enemies[Random.Range(0,enemies.Length)], new Vector3(Random.Range(xRange-5,xRange+5),yRange,Random.Range(zRange-5,zRange+5)), Quaternion.identity);
     }
 }

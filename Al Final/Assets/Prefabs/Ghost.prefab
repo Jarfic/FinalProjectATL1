@@ -158,8 +158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  soundPlayer: {fileID: 0}
-  playerDieSound: {fileID: 0}
 --- !u!195 &5535152575662830049
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -336,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sound: {fileID: 0}
-  playerDieSound: {fileID: 0}
+  playerDieSound: {fileID: 8300000, guid: 9f2624b00a5074e608ea94d80375c737, type: 3}
 --- !u!54 &2872313885063611334
 Rigidbody:
   m_ObjectHideFlags: 0

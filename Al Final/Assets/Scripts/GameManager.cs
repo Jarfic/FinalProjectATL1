@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject optionsObject;
     public GameObject playerHealth;
     public GameObject objective;
-
+    public GameObject scoreObject;
     public AudioSource soundPlayer;
     public AudioClip playerDieSound;
 
@@ -48,13 +48,18 @@ public class GameManager : MonoBehaviour
             enemy.gameObject.SetActive(false);
             playerHealth.SetActive(false);
             objective.SetActive(false);
-            
         }
 
 
         if(SceneManager.GetActiveScene().name == "Level 1") SceneManager.LoadScene("Level 2");
         else if(SceneManager.GetActiveScene().name == "Level 2") SceneManager.LoadScene("Level 3");
-        else victoryTextObject.SetActive(true);
+        else
+        {
+            SceneManager.LoadScene("Victory Screen");
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
     }
     
     public void GameOver()
@@ -63,6 +68,10 @@ public class GameManager : MonoBehaviour
         foreach(EnemyFollower enemy in FindObjectsOfType<EnemyFollower>())
         {
             enemy.gameObject.SetActive(false);
+        }
+        foreach(Weapon1 weapon in FindObjectsOfType<Weapon1>())
+        {
+            weapon.gameObject.SetActive(false);
         }
         soundPlayer.PlayOneShot(playerDieSound);
         Cursor.lockState = CursorLockMode.None;

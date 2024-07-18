@@ -12,6 +12,8 @@ public class Weapon1: MonoBehaviour
     public float bulletLifeTime = 3f;
     public float cooldown;
     float lastShot;
+    public AudioSource soundShoot;
+    public AudioClip shootSound;
 
     void Start()
     {
@@ -40,6 +42,8 @@ public class Weapon1: MonoBehaviour
         Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
 
         bulletRigidbody.velocity = cameraTransform.forward * bulletSpeed;
+
+        soundShoot.PlayOneShot(shootSound);
 
         Destroy(bullet, bulletLifeTime);
 

@@ -107,7 +107,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8
+  m_Radius: 1
   m_Height: 2.4
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -124,8 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  soundPlayer: {fileID: 0}
-  playerDieSound: {fileID: 8300000, guid: 9f2624b00a5074e608ea94d80375c737, type: 3}
 --- !u!195 &6959936952380645793
 NavMeshAgent:
   m_ObjectHideFlags: 0
